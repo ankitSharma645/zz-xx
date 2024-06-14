@@ -28,12 +28,12 @@ app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
 //static folder
-/*
-app.use(express.static(path.join(__dirname, "./beta/build")));
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./beta/build/index.html"));
+  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
 });
-*/
+
+
 //port
 const PORT = process.env.PORT || 8080;
 
